@@ -7,8 +7,8 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
 app = FastAPI()
 
-tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
-model = GPT2LMHeadModel.from_pretrained("gpt2")
+tokenizer = GPT2Tokenizer.from_pretrained('distilbert-base-uncased')
+model = GPT2LMHeadModel.from_pretrained('distilbert-base-uncased')
 
 class GreetingRequest(BaseModel):
     name: str
