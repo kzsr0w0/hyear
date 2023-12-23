@@ -3,12 +3,12 @@ import random
 import string
 from fastapi import FastAPI
 from pydantic import BaseModel
-from transformers import GPT2LMHeadModel, GPT2Tokenizer
+from transformers import DistilBertTokenizer, DistilBertModel
 
 app = FastAPI()
 
-tokenizer = GPT2Tokenizer.from_pretrained('distilbert-base-uncased')
-model = GPT2LMHeadModel.from_pretrained('distilbert-base-uncased')
+tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
+model = DistilBertModel.from_pretrained('distilbert-base-uncased')
 
 class GreetingRequest(BaseModel):
     name: str
