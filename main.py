@@ -3,12 +3,12 @@ import random
 import string
 from fastapi import FastAPI
 from pydantic import BaseModel
-from transformers import DistilBertTokenizer, DistilBertModel
+from transformers import AutoTokenizer, AutoModel
 
 app = FastAPI()
 
-tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
-model = DistilBertModel.from_pretrained('distilbert-base-uncased')
+tokenizer = AutoTokenizer.from_pretrained('huawei-noah/TinyBERT_General_4L_312D')
+model = AutoModel.from_pretrained('huawei-noah/TinyBERT_General_4L_312D')
 
 class GreetingRequest(BaseModel):
     name: str
