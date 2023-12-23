@@ -1,0 +1,7 @@
+pip
+numpy
+pandas
+fastapi
+uvicorn
+random
+string
