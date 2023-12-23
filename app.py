@@ -4,7 +4,7 @@ import requests
 import random
 
 
-st.title("新年のあいさつ生成機")
+st.title("新年のあいさつ自動生成")
 
 name = st.text_input("名前を入力してください")
 year = st.number_input("年を入力してください", min_value=2020, max_value=2100, value=2023)
