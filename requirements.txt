@@ -4,4 +4,6 @@ pandas
 fastapi
 uvicorn
 transformers
-torch torchvision torchaudio
+torch
+torchvision
+torchaudio
